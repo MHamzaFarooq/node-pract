@@ -1,9 +1,9 @@
 function userForm(req, res) {
-  res.write(`
+  return `
     <form action= "/submit">
         <input type="text" name="message" placeholder="Enter your message">
         <button type="submit">Submit</button>
     </form>
-    `);
+`;
 }
-module.exports = userForm;
+export default userForm;
